@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7ecde;
+}
+::selection {
+  background-color: #fec260;
+}
+.container {
+  border-bottom: 2px dotted #000;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  font-size: 50px;
+  width: fit-content;
+}
+header h1 span::after {
+  content: "";
+  position: absolute;
+  background-color: #fec260;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+header h1:hover span::after {
+  height: 70%;
+}
+
+section .title {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  color: #3da55c;
+}
+input:focus {
+  box-shadow: 1px 0px 1px 3px#fec260 !important;
+}
+circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+circle:nth-child(1) {
+  background-color: #f15f5d;
+}
+circle:nth-child(2) {
+  background-color: #febe2e;
+}
+circle:nth-child(3) {
+  background-color: #4db748;
+}
+#xmark {
+  cursor: pointer;
+}
+dialog p {
+  font-family: "Bree Serif", serif;
+  color: #352e28;
+  font-size: 22px;
+}
+dialog span {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 18px;
+  color: #212529;
+  line-height: 40px;
+}
+dialog {
+  width: 500px;
+}
