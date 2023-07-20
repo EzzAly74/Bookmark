@@ -36,7 +36,7 @@
       <div class="container py-4">
         <div class="title text-center">
           <i class="fa-solid fa-bookmark"></i>
-          <span class="mx-2">Bookmark your favorite sites</span>
+          <span class="mx-1">Bookmark your favorite sites</span>
           <i class="fa-solid fa-bookmark"></i>
         </div>
 
@@ -45,24 +45,33 @@
             ><i class="fa-solid fa-book-bookmark"></i>
             <span class="ps-1">Site Name</span></label
           >
-          <input
-            type="text"
-            id="siteName"
-            class="form-control my-2"
-            placeholder="Bookmark Name"
-          />
-
+          <div class="d-flex align-items-center">
+            <input
+              type="text"
+              id="siteName"
+              class="form-control my-2"
+              placeholder="Bookmark Name"
+            />
+            <i class="hambozo fa-solid success"></i>
+          </div>
           <label class="ps-1 mt-4" for="siteUrl"
             ><i class="fa-solid fa-link"></i> <span> Site URL</span></label
           >
-          <input
-            type="text"
-            id="siteUrl"
-            class="form-control my-2"
-            placeholder="Website URL"
-          />
+          <div class="d-flex align-items-center">
+            <input
+              type="text"
+              id="siteUrl"
+              class="form-control my-2"
+              placeholder="Website URL"
+            />
+            <i class="hambozo fa-solid error"></i>
+          </div>
+          <div class="alert alert-danger my-1 opacity-0" role="alert">
+            <i class="fa-solid fa-triangle-exclamation fa-shake"></i> This Site
+            Name Already Exists !
+          </div>
           <center>
-            <button class="btn btn-danger mt-4 m-auto px-5 submit">
+            <button class="btn btn-danger m-auto mt-1 px-5 submit">
               Submit
             </button>
           </center>
@@ -112,6 +121,7 @@
         a valid one</span
       >
     </dialog>
+
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

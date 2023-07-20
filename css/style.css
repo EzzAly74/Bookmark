@@ -35,11 +35,11 @@ header h1:hover span::after {
 
 section .title {
   font-family: "Righteous", cursive;
-  font-size: 25px;
+  font-size: 24px;
   color: #3da55c;
 }
 input:focus {
-  box-shadow: 1px 0px 1px 3px#fec260 !important;
+  box-shadow: 1px 0px 1px 3px #fec260 !important;
 }
 circle {
   width: 20px;
@@ -61,14 +61,30 @@ circle:nth-child(3) {
 dialog p {
   font-family: "Bree Serif", serif;
   color: #352e28;
-  font-size: 22px;
+  font-size: 20px;
 }
 dialog span {
   font-family: "PT Sans Caption", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #212529;
   line-height: 40px;
 }
 dialog {
   width: 500px;
+}
+.error,
+.success {
+  font-size: 20px;
+  position: relative;
+  transform: translateX(-30px);
+}
+.alert {
+  width: 98.5%;
+  transition: 0.5s linear;
+  opacity: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: darkred;
 }
